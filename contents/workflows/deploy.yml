@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install jupyterlite-core jupyterlite-pyodide-kernel
+      - run: pip install jupyterlite-core jupyterlite-pyodide-kernel jupyter-server
 
       - run: jupyter lite build --contents contents --output-dir _output
 
